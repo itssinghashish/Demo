@@ -1,0 +1,12 @@
+<p>parent works!</p>
+<button (click)="onToggleClickHandler()">Toggle</button>
+<p *ngIf="show">
+<input type="text" [(ngModel)]="Name">
+<app-child [name]="Name">
+    <!-- projected content -->
+    <footer #footertemplaterefvar>@Component Lifecycle</footer>
+    <h1 #headertemplaterefvar>{{headertemplaterefvartext}}</h1>
+    <p #paragraphtemplaterefvar>This is a HELLO from</p>
+
+</app-child>
+</p>
